@@ -1,0 +1,26 @@
+@import './utils.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: $base-font;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+}
