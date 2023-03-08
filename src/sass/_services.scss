@@ -2,15 +2,17 @@
 @import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
 
 .services {
+  // padding-top: 45px;
+  // padding-bottom: 30px;
   background-color: $background-color;
 }
 
-.services__container {
-  padding: 0px 20px 0px 20px;
-}
+// .services__container {
+//   padding: 0px 20px 0px 20px;
+// }
 
 .services__title {
-  margin-bottom: 30px;
+  // margin-bottom: 45px;
 
   text-transform: uppercase;
   text-align: center;
@@ -35,7 +37,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  border-radius: 20px;
+  // border-radius: 20px;
 }
 
 .glide__slide--new-buildings {
@@ -74,4 +76,15 @@
   color: $white-color;
 
   -webkit-text-stroke: 1px $main-color;
+}
+
+.glide__arrow {
+  top: 90%;
+}
+
+.glide__arrow--left {
+  left: 30%;
+}
+.glide__arrow--right {
+  right: 30%;
 }
