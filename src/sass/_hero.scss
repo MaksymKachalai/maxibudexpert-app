@@ -68,6 +68,10 @@
     border: 2px solid $main-color;
   }
 
+  &:invalid {
+    border: 2px solid red;
+  }
+
   outline: $main-color;
 }
 

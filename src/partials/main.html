@@ -1,7 +1,7 @@
 <div class="wrapper">
   <header class="header">
     <div class="header__container">
-      <div class="main-logo">
+      <button class="main-logo">
         <svg class="main-logo__icon">
           <use
             class="main-logo__svg"
@@ -11,10 +11,12 @@
         <p class="main-logo__text">
           МАКСІБУД<span class="main-logo__text--highlighted">ЕКСПЕРТ</span>
         </p>
-      </div>
-      <svg class="header__burger-icon">
-        <use href="./images/symbol-defs.svg#burger-icon-min"></use>
-      </svg>
+      </button>
+      <button type="button" id="modal-button">
+        <svg class="header__burger-icon">
+          <use href="./images/symbol-defs.svg#burger-icon-min"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <main class="main">
@@ -26,13 +28,18 @@
             Повний спектр послуг з ремонту квартир, будинків та промислових
             об’єктів
           </h2>
-          <form class="hero__form">
-            <input type="number" placeholder="Введіть свій номер" />
+          <form class="hero__form" id="hero-form">
+            <input
+              type="tel"
+              placeholder="Введіть свій номер"
+              id="form-input"
+              name="phone"
+            />
             <button type="submit">Зв'язатися з нами</button>
           </form>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="services__container">
           <h2 class="services__title">Наші послуги</h2>
           <div class="glide">
@@ -81,7 +88,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="advantages__container">
           <h2 class="advantages__title">
             <span class="advantages__title--highlighted">30+</span>років
@@ -230,7 +237,7 @@
           </ul>
         </div>
       </section>
-      <section class="application">
+      <section class="application" id="application">
         <div class="application__container">
           <h3 class="application__title">Залиште заявку прямо зараз</h3>
           <form class="application__form">
@@ -288,9 +295,9 @@
       </a>
     </div>
   </footer>
-  <div class="modal">
+  <div class="modal" id="modal">
     <div class="header__container header__modal">
-      <div class="main-logo modal__logo">
+      <button class="main-logo modal__logo">
         <svg class="main-logo__icon">
           <use
             class="main-logo__svg"
@@ -300,22 +307,24 @@
         <p class="main-logo__text">
           МАКСІБУД<span class="main-logo__text--highlighted">ЕКСПЕРТ</span>
         </p>
-      </div>
-      <svg class="modal__burger-icon">
-        <use href="./images/symbol-defs.svg#burger-icon-close-min"></use>
-      </svg>
+      </button>
+      <button type="button" id="modal-button-close">
+        <svg class="modal__burger-icon">
+          <use href="./images/symbol-defs.svg#burger-icon-close-min"></use>
+        </svg>
+      </button>
     </div>
 
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link">Послуги</a>
+          <a class="navigation__link" href="#services">Послуги</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">Про нас</a>
+          <a class="navigation__link" href="#advantages">Про нас</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">Контакти</a>
+          <a class="navigation__link" href="#application">Контакти</a>
         </li>
       </ul>
     </nav>
