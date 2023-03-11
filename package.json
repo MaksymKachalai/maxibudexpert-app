@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "parcel src/*.html",
+    "cleanup": "rmdir /q /s .parcel-cache dist",
+    "start": "npm run cleanup && parcel src/*.html",
     "build": "parcel build src/*.html --public-url /parcel-project-template/"
   },
   "devDependencies": {

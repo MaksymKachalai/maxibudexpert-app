@@ -185,69 +185,139 @@
         </div>
       </section>
       <section class="stages">
-        <ul>
-          <li>
-            <svg>
-              <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
-            </svg>
-            <p>Наш фахівець зателефонує Вам протягом 5 хв</p>
-          </li>
-          <li>
-            <svg>
-              <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
-            </svg>
-            <p>Домовиться про час і місце зустрічі для оцінки об’єкту</p>
-          </li>
-          <li>
-            <svg>
-              <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
-            </svg>
-            <p>Складе кошторис відповідно до вимог завдання</p>
-          </li>
-          <li>
-            <svg>
-              <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
-            </svg>
-            <p>Наша команда почне виконання ремонту</p>
-          </li>
-          <li>
-            <svg>
-              <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
-            </svg>
-            <p>Після успішного виконання Ви приймаєте об’єкт</p>
-          </li>
-        </ul>
+        <div class="stages__container">
+          <ul class="stages__list">
+            <li class="stages__item">
+              <svg class="stages__icon">
+                <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
+              </svg>
+              <p class="stages__description">
+                Наш фахівець зателефонує Вам протягом 5 хв
+              </p>
+            </li>
+            <li class="stages__item">
+              <svg class="stages__icon">
+                <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
+              </svg>
+              <p class="stages__description">
+                Домовиться про час і місце зустрічі для оцінки об’єкту
+              </p>
+            </li>
+            <li class="stages__item">
+              <svg class="stages__icon">
+                <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
+              </svg>
+              <p class="stages__description">
+                Складе кошторис відповідно до вимог завдання
+              </p>
+            </li>
+            <li class="stages__item">
+              <svg class="stages__icon">
+                <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
+              </svg>
+              <p class="stages__description">
+                Наша команда почне виконання ремонту
+              </p>
+            </li>
+            <li class="stages__item">
+              <svg class="stages__icon">
+                <use href="./images/symbol-defs.svg#list-item-icon-min"></use>
+              </svg>
+              <p class="stages__description">
+                Після успішного виконання Ви приймаєте об’єкт
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="request-form">
-        <h3 class="request-form__title">Залиште заявку прямо зараз</h3>
-        <form>
-          <input type="text" placeholder="Введіть ім’я" />
-          <input type="number" placeholder="Введіть  свій номер" />
-          <button type="submit">Зв'затися з нами</button>
-        </form>
+      <section class="application">
+        <div class="application__container">
+          <h3 class="application__title">Залиште заявку прямо зараз</h3>
+          <form class="application__form">
+            <input type="text" placeholder="Введіть ім’я" />
+            <input type="number" placeholder="Введіть  свій номер" />
+            <button type="submit">Зв'затися з нами</button>
+          </form>
+        </div>
       </section>
     </div>
   </main>
   <footer class="footer">
     <div class="footer__container">
-      <div class="footer__email">
-        <svg>
-          <use href="./images/symbol-defs.svg#email-icon-min"></use>
+      <a class="footer__email-link">
+        <svg class="footer__icon-email">
+          <use
+            class="test"
+            href="./images/symbol-defs.svg#email-icon-min"
+          ></use>
         </svg>
-        <p>maks.kachalay@gmail.com</p>
-      </div>
+        <p class="footer__email-text">maks.kachalay@gmail.com</p>
+      </a>
       <div class="footer__phone">
-        <svg>
-          <use href="./images/symbol-defs.svg#phone-icon-min"></use>
-        </svg>
-        <p>38(099)-465-10-04</p>
+        <a class="footer__phone-link">
+          <svg class="footer__icon-phone">
+            <use href="./images/symbol-defs.svg#phone-icon-min"></use>
+          </svg>
+          <p class="footer__phone-text">38(099)-465-10-04</p>
+        </a>
+        <div class="social-media">
+          <svg class="social-media__icon">
+            <use href="./images/symbol-defs.svg#telegram-icon-min"></use>
+          </svg>
+          <svg class="social-media__icon">
+            <use href="./images/symbol-defs.svg#viber-icon-min"></use>
+          </svg>
+        </div>
       </div>
-      <svg>
-        <use href="./images/symbol-defs.svg#telegram-icon-min"></use>
-      </svg>
-      <svg>
-        <use href="./images/symbol-defs.svg#viber-icon-min"></use>
-      </svg>
+      <div class="footer__location">
+        <svg class="footer__city-icon">
+          <use href="./images/symbol-defs.svg#location-icon-min"></use>
+        </svg>
+        <p class="footer__city-description">Київ, Київська область</p>
+      </div>
+      <a class="main-logo footer__main-logo">
+        <svg class="main-logo__icon">
+          <use
+            class="main-logo__svg"
+            href="./images/symbol-defs.svg#logo-icon-min"
+          ></use>
+        </svg>
+        <p class="main-logo__text">
+          МАКСІБУД<span class="main-logo__text--highlighted">ЕКСПЕРТ</span>
+        </p>
+      </a>
     </div>
   </footer>
+  <div class="modal">
+    <div class="header__container header__modal">
+      <div class="main-logo modal__logo">
+        <svg class="main-logo__icon">
+          <use
+            class="main-logo__svg"
+            href="./images/symbol-defs.svg#logo-icon-min"
+          ></use>
+        </svg>
+        <p class="main-logo__text">
+          МАКСІБУД<span class="main-logo__text--highlighted">ЕКСПЕРТ</span>
+        </p>
+      </div>
+      <svg class="modal__burger-icon">
+        <use href="./images/symbol-defs.svg#burger-icon-close-min"></use>
+      </svg>
+    </div>
+
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link">Послуги</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link">Про нас</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>

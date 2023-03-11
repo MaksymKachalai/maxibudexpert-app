@@ -1,0 +1,80 @@
+.application {
+  background-color: $background-color;
+}
+
+.application__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 45px 20px 45px 20px;
+}
+
+.application__title {
+  margin-bottom: 40px;
+
+  font-family: $addition-font;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+
+  color: $dark-color;
+}
+
+.application__form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.application__form > input {
+  height: 60px;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+
+  padding: 10px;
+  border: none;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  text-align: center;
+  color: $dark-color;
+
+  &:hover {
+    border: 2px solid $main-color;
+  }
+
+  &:focus {
+    border: 2px solid $main-color;
+  }
+
+  outline: $main-color;
+}
+
+.application__form > button {
+  height: 66px;
+  width: 100%;
+  border-radius: 25px;
+
+  background-color: $main-color;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  color: $white-color;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  transition: transform 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+
+  // TODO: add correct active state for mobile devices
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}

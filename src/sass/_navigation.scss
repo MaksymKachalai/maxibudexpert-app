@@ -1,0 +1,36 @@
+.navigation {
+  width: 100%;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navigation__item {
+  padding: 25px;
+  width: 280px;
+  border-radius: 25px;
+  background-color: $main-color;
+
+  cursor: pointer;
+
+  & + .navigation__item {
+    margin-top: 30px;
+  }
+}
+
+.navigation__link {
+  display: block;
+  text-align: center;
+
+  font-family: $addition-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: $white-color;
+}
