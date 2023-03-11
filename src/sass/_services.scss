@@ -1,0 +1,90 @@
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
+
+.services {
+  // padding-top: 45px;
+  // padding-bottom: 30px;
+  background-color: $background-color;
+}
+
+// .services__container {
+//   padding: 0px 20px 0px 20px;
+// }
+
+.services__title {
+  // margin-bottom: 45px;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $addition-font;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.8;
+
+  color: $white-color;
+  background-color: $main-color;
+}
+
+.glide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 480px;
+  min-width: 280px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  // border-radius: 20px;
+}
+
+.glide__slide--new-buildings {
+  background-image: url('../images/new-buildings-background.jpg');
+}
+
+.glide__slide--private {
+  background-image: url('../images/private-house-background.jpg');
+}
+
+.glide__slide--old-buildings {
+  background-image: url('../images/old-buildings-background.jpg');
+}
+
+.glide__slide--commercial {
+  background-image: url('../images/commercial-background.jpg');
+}
+
+.glide__decoration-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  height: 450px;
+  border: 2px solid $white-color;
+  border-radius: 20px;
+}
+
+.glide__title {
+  font-family: $addition-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: $white-color;
+
+  -webkit-text-stroke: 1px $main-color;
+}
+
+.glide__arrow {
+  top: 90%;
+}
+
+.glide__arrow--left {
+  left: 30%;
+}
+.glide__arrow--right {
+  right: 30%;
+}

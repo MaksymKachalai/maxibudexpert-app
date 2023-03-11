@@ -1,0 +1,46 @@
+.stages {
+  background-color: $background-color;
+}
+
+.stages__container {
+  padding: 45px 20px 45px 20px;
+}
+
+.stages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stages__item {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 20px;
+
+  background-color: $white-color;
+}
+
+.stages__item + .stages__item {
+  margin-top: 20px;
+}
+
+.stages__icon {
+  width: 55px;
+  height: 55px;
+
+  margin-bottom: 10px;
+}
+
+.stages__description {
+  font-family: $addition-font;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: $dark-color;
+}

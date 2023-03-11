@@ -1,0 +1,124 @@
+.footer {
+  background-color: $main-color;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 45px 20px 45px 20px;
+}
+
+.footer__email-link {
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+
+  width: 280px;
+  padding: 15px;
+
+  border-radius: 20px;
+  background-color: $white-color;
+
+  cursor: pointer;
+}
+
+.footer__icon-email {
+  width: 22px;
+  height: 17px;
+}
+
+.footer__email-text {
+  margin-left: 10px;
+
+  font-family: $addition-font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $dark-color;
+}
+
+.footer__phone {
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 280px;
+  padding: 10px;
+
+  border-radius: 20px;
+  background-color: $white-color;
+}
+
+.footer__phone-link {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.footer__icon-phone {
+  width: 22px;
+  height: 17px;
+}
+
+.footer__phone-text {
+  font-family: $addition-font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  margin-left: 15px;
+
+  color: $dark-color;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+}
+
+.social-media__icon {
+  width: 31px;
+  height: 31px;
+}
+
+.footer__location {
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 250px;
+}
+
+.footer__city-icon {
+  width: 18px;
+  height: 24px;
+}
+
+.footer__city-description {
+  font-family: $addition-font;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $white-color;
+}
+
+.footer__main-logo {
+  padding: 10px;
+
+  justify-content: center;
+  border-radius: 20px;
+
+  background-color: $white-color;
+}
