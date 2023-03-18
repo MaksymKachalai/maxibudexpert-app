@@ -1,3 +1,7 @@
+.advantages {
+  background-color: $background-color;
+}
+
 .advantages__container {
   padding: 45px 20px 45px 20px;
   display: flex;
@@ -44,53 +48,203 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 85%;
+
+  gap: 10px;
 }
 
 .advantages__item {
   position: relative;
-  padding: 15px;
+
+  width: 100%;
+  height: 70px;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
 
-  width: 260px;
-  height: 360px;
+  cursor: pointer;
 
-  border: 5px solid $main-color;
-  border-radius: 20px;
-}
+  background-color: $white-color;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 
-.advantages__item + .advantages__item {
-  margin-top: 20px;
-}
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
-.advantages__box {
-  position: absolute;
-  top: -8;
-  left: 20;
-}
+  transition: margin-bottom 0.3s ease-in-out;
 
-.advantages__box-number {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  &--active {
+    margin-bottom: 250px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 150px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 100px;
+    }
 
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 1.2;
-  color: $white-color;
+    .advantages__info {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 .advantages__item-title {
-  margin-bottom: 50px;
-
   font-family: $addition-font;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.2;
 
+  text-align: left;
+
   color: $dark-color;
+  &--first {
+    color: #37306b;
+    border-color: #37306b;
+  }
+  &--second {
+    color: #66347f;
+    border-color: #66347f;
+  }
+  &--third {
+    color: #9e4784;
+    border-color: #9e4784;
+  }
+  &--fourth {
+    color: #d27685;
+    border-color: #d27685;
+  }
+}
+
+.advantages__circle {
+  position: relative;
+  left: -20px;
+
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 7px solid $dark-color;
+  background-color: $white-color;
+
+  &--first {
+    color: #37306b;
+    border-color: #37306b;
+  }
+  &--second {
+    color: #66347f;
+    border-color: #66347f;
+  }
+  &--third {
+    color: #9e4784;
+    border-color: #9e4784;
+  }
+  &--fourth {
+    color: #d27685;
+    border-color: #d27685;
+  }
+}
+
+.advantages__number {
+  font-family: $addition-font;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.advantages__description-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 70px);
+
+  padding-right: 10px;
+}
+
+.advantages__svg {
+  fill: $secondary-color;
+}
+
+.advantages__label {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+
+  transform: translateY(-50%);
+
+  width: 10px;
+  height: 65px;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  transition: right 0.3s ease-in-out, width 0.3s ease-in-out;
+
+  &--active {
+    right: -20px;
+    width: 20px;
+  }
+
+  &--first {
+    background-color: #37306b;
+  }
+  &--second {
+    background-color: #66347f;
+  }
+  &--third {
+    background-color: #9e4784;
+  }
+  &--fourth {
+    background-color: #d27685;
+  }
+}
+
+.advantages__info {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: -250px;
+  width: 100%;
+  height: 250px;
+
+  padding: 10px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  font-family: $addition-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  color: $white-color;
+
+  &--first {
+    background-color: #37306b;
+  }
+  &--second {
+    background-color: #66347f;
+  }
+  &--third {
+    background-color: #9e4784;
+  }
+  &--fourth {
+    background-color: #d27685;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 150px;
+    bottom: -150px;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 100px;
+    bottom: -100px;
+  }
 }

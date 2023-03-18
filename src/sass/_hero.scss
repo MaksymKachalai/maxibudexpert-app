@@ -68,6 +68,10 @@
     border: 2px solid $main-color;
   }
 
+  &:invalid {
+    border: 2px solid red;
+  }
+
   outline: $main-color;
 }
 
@@ -83,14 +87,14 @@
 
   color: $white-color;
 
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-  transition: transform 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: box-shadow 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
 
   // TODO: add correct active state for mobile devices
 
   &:hover,
   &:focus {
-    transform: scale(1.05);
+    box-shadow: 7px 5px 56px -14px $main-color;
   }
 }

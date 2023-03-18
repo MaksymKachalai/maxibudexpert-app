@@ -1,7 +1,7 @@
 <div class="wrapper">
   <header class="header">
     <div class="header__container">
-      <div class="main-logo">
+      <button class="main-logo">
         <svg class="main-logo__icon">
           <use
             class="main-logo__svg"
@@ -11,10 +11,12 @@
         <p class="main-logo__text">
           МАКСІБУД<span class="main-logo__text--highlighted">ЕКСПЕРТ</span>
         </p>
-      </div>
-      <svg class="header__burger-icon">
-        <use href="./images/symbol-defs.svg#burger-icon-min"></use>
-      </svg>
+      </button>
+      <button type="button" id="modal-button">
+        <svg class="header__burger-icon">
+          <use href="./images/symbol-defs.svg#burger-icon-min"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <main class="main">
@@ -26,62 +28,115 @@
             Повний спектр послуг з ремонту квартир, будинків та промислових
             об’єктів
           </h2>
-          <form class="hero__form">
-            <input type="number" placeholder="Введіть свій номер" />
+          <form class="hero__form" id="hero-form">
+            <input
+              type="tel"
+              placeholder="Введіть свій номер"
+              id="form-input"
+              name="phone"
+            />
             <button type="submit">Зв'язатися з нами</button>
           </form>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="services__container">
           <h2 class="services__title">Наші послуги</h2>
           <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide glide__slide--new-buildings">
-                  <div class="glide__decoration-box">
-                    <h3 class="glide__title">Новобудови</h3>
+            <ul class="glide__slides">
+              <li class="glide__slide glide__slide--new-buildings">
+                <div class="glide__decoration-box">
+                  <div class="glide__hover-box">
+                    <h2 class="glide__title glide__title--hover">
+                      Ремонт новобудов
+                    </h2>
+                    <p class="glide__hover-text">
+                      Наша компанія спеціалізується на ремонті новобудов.<br />
+                      Ми надаємо широкий спектр послуг, включаючи укладання
+                      підлогових покриттів, встановлення сантехніки, монтаж
+                      електропроводки, фарбування та багато іншого.<br />
+                      Наша команда професіоналів гарантує якість та точність
+                      Звертайтесь до нас для ремонту вашої новобудови та
+                      отримайте надійний, швидкий та професійний сервіс за
+                      розумними цінами. Заповніть форму на нашому сайті, щоб
+                      отримати безкоштовну консультацію нашого експерта вже
+                      сьогодні!
+                    </p>
                   </div>
-                </li>
-                <li class="glide__slide glide__slide--private">
-                  <div class="glide__decoration-box">
-                    <h3 class="glide__title">Приватні будинки</h3>
+                  <h3 class="glide__title">Новобудови</h3>
+                </div>
+              </li>
+              <li class="glide__slide glide__slide--private">
+                <div class="glide__decoration-box">
+                  <h3 class="glide__title">Приватні будинки</h3>
+                  <div class="glide__hover-box">
+                    <h2 class="glide__title glide__title--hover">
+                      Ремонт новобудов
+                    </h2>
+                    <p class="glide__hover-text">
+                      Наша компанія спеціалізується на ремонті новобудов.<br />
+                      Ми надаємо широкий спектр послуг, включаючи укладання
+                      підлогових покриттів, встановлення сантехніки, монтаж
+                      електропроводки, фарбування та багато іншого.<br />
+                      Наша команда професіоналів гарантує якість та точність
+                      Звертайтесь до нас для ремонту вашої новобудови та
+                      отримайте надійний, швидкий та професійний сервіс за
+                      розумними цінами. Заповніть форму на нашому сайті, щоб
+                      отримати безкоштовну консультацію нашого експерта вже
+                      сьогодні!
+                    </p>
                   </div>
-                </li>
-                <li class="glide__slide glide__slide--old-buildings">
-                  <div class="glide__decoration-box">
-                    <h3 class="glide__title">Вторинний ринок</h3>
+                </div>
+              </li>
+              <li class="glide__slide glide__slide--old-buildings">
+                <div class="glide__decoration-box">
+                  <h3 class="glide__title">Вторинний ринок</h3>
+                  <div class="glide__hover-box">
+                    <h2 class="glide__title glide__title--hover">
+                      Ремонт новобудов
+                    </h2>
+                    <p class="glide__hover-text">
+                      Наша компанія спеціалізується на ремонті новобудов.<br />
+                      Ми надаємо широкий спектр послуг, включаючи укладання
+                      підлогових покриттів, встановлення сантехніки, монтаж
+                      електропроводки, фарбування та багато іншого.<br />
+                      Наша команда професіоналів гарантує якість та точність
+                      Звертайтесь до нас для ремонту вашої новобудови та
+                      отримайте надійний, швидкий та професійний сервіс за
+                      розумними цінами. Заповніть форму на нашому сайті, щоб
+                      отримати безкоштовну консультацію нашого експерта вже
+                      сьогодні!
+                    </p>
                   </div>
-                </li>
-                <li class="glide__slide glide__slide--commercial">
-                  <div class="glide__decoration-box">
-                    <h3 class="glide__title">Комерційна нерухомість</h3>
+                </div>
+              </li>
+              <li class="glide__slide glide__slide--commercial">
+                <div class="glide__decoration-box">
+                  <h3 class="glide__title">Комерційна нерухомість</h3>
+                  <div class="glide__hover-box">
+                    <h2 class="glide__title glide__title--hover">
+                      Ремонт новобудов
+                    </h2>
+                    <p class="glide__hover-text">
+                      Наша компанія спеціалізується на ремонті новобудов.<br />
+                      Ми надаємо широкий спектр послуг, включаючи укладання
+                      підлогових покриттів, встановлення сантехніки, монтаж
+                      електропроводки, фарбування та багато іншого.<br />
+                      Наша команда професіоналів гарантує якість та точність
+                      Звертайтесь до нас для ремонту вашої новобудови та
+                      отримайте надійний, швидкий та професійний сервіс за
+                      розумними цінами. Заповніть форму на нашому сайті, щоб
+                      отримати безкоштовну консультацію нашого експерта вже
+                      сьогодні!
+                    </p>
                   </div>
-                </li>
-              </ul>
-            </div>
-            <div class="glide__arrows" data-glide-el="controls">
-              <button
-                class="glide__arrow glide__arrow--left"
-                data-glide-dir="<"
-              >
-                <svg width="10px" height="15px" fill="#ffffff">
-                  <use href="./images/symbol-defs.svg#prev-icon-min"></use>
-                </svg>
-              </button>
-              <button
-                class="glide__arrow glide__arrow--right"
-                data-glide-dir=">"
-              >
-                <svg width="10px" height="15px" fill="#ffffff">
-                  <use href="./images/symbol-defs.svg#next-icon-min"></use>
-                </svg>
-              </button>
-            </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="advantages__container">
           <h2 class="advantages__title">
             <span class="advantages__title--highlighted">30+</span>років
@@ -95,52 +150,104 @@
           </p>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <div class="advantages__box">
-                <svg class="advatages__flag-icon" width="69px" height="89px">
-                  <use href="./images/symbol-defs.svg#flag-icon-min"></use>
-                </svg>
-                <span class="advantages__box-number">1</span>
+              <div class="advantages__circle advantages__circle--first">
+                <span class="advantages__number">01</span>
               </div>
-              <h4 class="advantages__item-title">Якість</h4>
-              <svg class="advantages__icon" width="142px" height="144px">
-                <use href="./images/symbol-defs.svg#quality-icon-min"></use>
-              </svg>
+              <div class="advantages__description-item">
+                <h4
+                  class="advantages__item-title advantages__item-title--first"
+                >
+                  Якість
+                </h4>
+                <div class="advantages__icon">
+                  <svg class="advantages__svg" width="40px" height="40px">
+                    <use href="./images/symbol-defs.svg#quality-icon-min"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="advantages__label advantages__label--first"></div>
+              <div class="advantages__info advantages__info--first">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur, unde quae voluptatum facere minus beatae vero ipsa eos
+                esse eveniet voluptate, atque dolore nemo incidunt nihil amet!
+                Perspiciatis, fugit tempore!
+              </div>
             </li>
             <li class="advantages__item">
-              <div class="advantages__box">
-                <svg class="advatages__flag-icon" width="69px" height="89px">
-                  <use href="./images/symbol-defs.svg#flag-icon-min"></use>
-                </svg>
-                <span class="advantages__box-number">2</span>
+              <div class="advantages__circle advantages__circle--second">
+                <span class="advantages__number">02</span>
               </div>
-              <h4 class="advantages__item-title">Вигідна ціна</h4>
-              <svg class="advantages__icon" width="142px" height="144px">
-                <use href="./images/symbol-defs.svg#price-icon-min"></use>
-              </svg>
+              <div class="advantages__description-item">
+                <h4
+                  class="advantages__item-title advantages__item-title--second"
+                >
+                  Вигідна ціна
+                </h4>
+                <div class="advantages__icon">
+                  <svg class="advantages__svg" width="40px" height="40px">
+                    <use href="./images/symbol-defs.svg#price-icon-min"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="advantages__label advantages__label--second"></div>
+              <div class="advantages__info advantages__info--second">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur, unde quae voluptatum facere minus beatae vero ipsa eos
+                esse eveniet voluptate, atque dolore nemo incidunt nihil amet!
+                Perspiciatis, fugit tempore!
+              </div>
             </li>
             <li class="advantages__item">
-              <div class="advantages__box">
-                <svg class="advatages__flag-icon" width="69px" height="89px">
-                  <use href="./images/symbol-defs.svg#flag-icon-min"></use>
-                </svg>
-                <span class="advantages__box-number">3</span>
+              <div class="advantages__circle advantages__circle--third">
+                <span class="advantages__number">03</span>
               </div>
-              <h4 class="advantages__item-title">Надійність</h4>
-              <svg class="advantages__icon" width="142px" height="144px">
-                <use href="./images/symbol-defs.svg#reliability-icon-min"></use>
-              </svg>
+              <div class="advantages__description-item">
+                <h4
+                  class="advantages__item-title advantages__item-title--third"
+                >
+                  Надійність
+                </h4>
+                <div class="advantages__icon">
+                  <svg class="advantages__svg" width="40px" height="40px">
+                    <use
+                      href="./images/symbol-defs.svg#reliability-icon-min"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="advantages__label advantages__label--third"></div>
+              <div class="advantages__info advantages__info--third">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur, unde quae voluptatum facere minus beatae vero ipsa eos
+                esse eveniet voluptate, atque dolore nemo incidunt nihil amet!
+                Perspiciatis, fugit tempore!
+              </div>
             </li>
             <li class="advantages__item">
-              <div class="advantages__box">
-                <svg class="advatages__flag-icon" width="69px" height="89px">
-                  <use href="./images/symbol-defs.svg#flag-icon-min"></use>
-                </svg>
-                <span class="advantages__box-number">4</span>
+              <div class="advantages__circle advantages__circle--fourth">
+                <span class="advantages__number">04</span>
               </div>
-              <h4 class="advantages__item-title">Досвід</h4>
-              <svg class="advantages__icon" width="142px" height="144px">
-                <use href="./images/symbol-defs.svg#experience--icon-min"></use>
-              </svg>
+              <div class="advantages__description-item">
+                <h4
+                  class="advantages__item-title advantages__item-title--fourth"
+                >
+                  Досвід
+                </h4>
+                <div class="advantages__icon">
+                  <svg class="advantages__svg" width="40px" height="40px">
+                    <use
+                      href="./images/symbol-defs.svg#experience-icon-min"
+                    ></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="advantages__label advantages__label--fourth"></div>
+              <div class="advantages__info advantages__info--fourth">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur, unde quae voluptatum facere minus beatae vero ipsa eos
+                esse eveniet voluptate, atque dolore nemo incidunt nihil amet!
+                Perspiciatis, fugit tempore!
+              </div>
             </li>
           </ul>
         </div>
@@ -150,36 +257,48 @@
           <h2 class="process__title">Як ми працюємо</h2>
           <ul class="process__list">
             <li class="process__item">
-              <div class="process__box">
-                <svg width="69px" height="116px">
+              <div class="process__number-box process__number-box--first">
+                <span class="process__number">01</span>
+              </div>
+              <div class="process__box process__box--first">
+                <svg width="30px" height="30px">
                   <use href="./images/symbol-defs.svg#request-icon-min"></use>
                 </svg>
+                <p class="process__subtitle">Залиште заявку</p>
               </div>
-              <p class="process__subtitle">Залиште заявку</p>
             </li>
             <li class="process__item">
-              <div class="process__box">
-                <svg width="99px" height="116px">
+              <div class="process__number-box process__number-box--second">
+                <span class="process__number">02</span>
+              </div>
+              <div class="process__box process__box--second">
+                <svg width="30px" height="30px">
                   <use href="./images/symbol-defs.svg#expert-icon-min"></use>
                 </svg>
+                <p class="process__subtitle">Виїзд фахівця на об'єкт</p>
               </div>
-              <p class="process__subtitle">Виїзд фахівця на об'єкт</p>
             </li>
             <li class="process__item">
-              <div class="process__box">
-                <svg width="80px" height="116px">
+              <div class="process__number-box process__number-box--third">
+                <span class="process__number">03</span>
+              </div>
+              <div class="process__box process__box--third">
+                <svg width="30px" height="30px">
                   <use href="./images/symbol-defs.svg#estimate-icon-min"></use>
                 </svg>
+                <p class="process__subtitle">Складення кошторису</p>
               </div>
-              <p class="process__subtitle">Складення кошторису</p>
             </li>
             <li class="process__item">
-              <div class="process__box">
-                <svg width="119px" height="116px">
+              <div class="process__number-box process__number-box--fourth">
+                <span class="process__number">04</span>
+              </div>
+              <div class="process__box process__box--fourth">
+                <svg width="30px" height="30px">
                   <use href="./images/symbol-defs.svg#work-icon-min"></use>
                 </svg>
+                <p class="process__subtitle">Виконуємо роботу</p>
               </div>
-              <p class="process__subtitle">Виконуємо роботу</p>
             </li>
           </ul>
         </div>
@@ -230,7 +349,7 @@
           </ul>
         </div>
       </section>
-      <section class="application">
+      <section class="application" id="application">
         <div class="application__container">
           <h3 class="application__title">Залиште заявку прямо зараз</h3>
           <form class="application__form">
@@ -288,9 +407,9 @@
       </a>
     </div>
   </footer>
-  <div class="modal">
+  <div class="modal" id="modal">
     <div class="header__container header__modal">
-      <div class="main-logo modal__logo">
+      <button class="main-logo modal__logo">
         <svg class="main-logo__icon">
           <use
             class="main-logo__svg"
@@ -300,22 +419,24 @@
         <p class="main-logo__text">
           МАКСІБУД<span class="main-logo__text--highlighted">ЕКСПЕРТ</span>
         </p>
-      </div>
-      <svg class="modal__burger-icon">
-        <use href="./images/symbol-defs.svg#burger-icon-close-min"></use>
-      </svg>
+      </button>
+      <button type="button" id="modal-button-close">
+        <svg class="modal__burger-icon">
+          <use href="./images/symbol-defs.svg#burger-icon-close-min"></use>
+        </svg>
+      </button>
     </div>
 
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link">Послуги</a>
+          <a class="navigation__link" href="#services">Послуги</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">Про нас</a>
+          <a class="navigation__link" href="#advantages">Про нас</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link">Контакти</a>
+          <a class="navigation__link" href="#application">Контакти</a>
         </li>
       </ul>
     </nav>

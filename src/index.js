@@ -1,5 +1,5 @@
-import Glide from '@glidejs/glide';
-
-new Glide('.glide', {
-  type: 'carousel',
-}).mount();
+import './modal';
+import './validation';
+import './form';
+import './slider';
+import './advantages';
