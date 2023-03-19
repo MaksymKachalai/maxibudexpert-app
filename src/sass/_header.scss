@@ -45,8 +45,57 @@
   color: $main-color;
 }
 
+.modal__button {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
 .header__burger-icon {
   width: 32px;
   height: 22px;
   stroke: $secondary-color;
+
+  &:hover,
+  &:focus {
+    stroke: $main-color;
+  }
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.tel {
+  display: none;
+  align-items: center;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+.tel__icon {
+  width: 18px;
+  height: 18px;
+  fill: $secondary-color;
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+}
+
+.tel__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $secondary-color;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
 }

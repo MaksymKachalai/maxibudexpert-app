@@ -10,10 +10,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  gap: 10px;
 }
 
 .stages__item {
+  position: relative;
   padding: 10px;
+
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -22,10 +27,15 @@
   border-radius: 20px;
 
   background-color: $white-color;
-}
+  background-image: url(../images/symbol-defs.svg#wave);
 
-.stages__item + .stages__item {
-  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 30px;
+  }
 }
 
 .stages__icon {
@@ -33,14 +43,33 @@
   height: 55px;
 
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .stages__description {
   font-family: $addition-font;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
   text-align: center;
 
   color: $dark-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.test {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 75px;
+}
+
+.test > use {
+  display: block;
+  width: 200px;
 }

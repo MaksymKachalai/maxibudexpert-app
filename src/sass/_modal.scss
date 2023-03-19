@@ -32,4 +32,8 @@
   height: 26px;
 
   fill: $secondary-color;
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
 }

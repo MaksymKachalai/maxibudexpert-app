@@ -38,3 +38,33 @@
 
   color: $white-color;
 }
+
+.header-navigation {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-navigation__list {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+}
+
+.header-navigation__link {
+  font-family: $addition-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+
+  color: $secondary-color;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+}
