@@ -2,10 +2,12 @@
   "name": "maxibudexpert-app",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://MaksymKachalai.github.io/maxibudexpert-app",
   "scripts": {
     "cleanup": "rmdir /q /s .parcel-cache dist",
     "start": "npm run cleanup && parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /maxibudexpert-app/",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
@@ -19,6 +21,7 @@
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.6"
   },

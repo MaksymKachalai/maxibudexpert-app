@@ -13,12 +13,12 @@ modalButtonOpen.addEventListener('click', event => {
 
 modalButtonClose.addEventListener('click', event => {
   modal.classList.remove('modal--open');
-  body.style.overflow = 'auto';
+  body.style.overflow = 'visible';
 });
 
 navigationItem.forEach(item => {
   item.addEventListener('click', event => {
     modal.classList.remove('modal--open');
-    body.style.overflow = 'auto';
+    body.style.overflow = 'visible';
   });
 });
