@@ -9,10 +9,3 @@ export function isValidPhone(number) {
   }
   return { result: true, message: 'Number is valid' };
 }
-
-export function isValidEmail(email) {
-  const regex = /\b[\w\.-]+@[\w\.]+\.\w{2,4}\b/;
-  const stringify = email.toString().toLowerCase();
-  const isValid = regex.test(stringify);
-  return isValid;
-}

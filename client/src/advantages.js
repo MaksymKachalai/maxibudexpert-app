@@ -5,7 +5,6 @@ const advantagesLabel = document.querySelectorAll('.advantages__label');
 
 advantagesItem.forEach(item => {
   item.addEventListener('mouseover', () => {
-    console.log(item.children[3]);
     item.children[2].classList.add('advantages__label--active');
   });
 

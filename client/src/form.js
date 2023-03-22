@@ -1,12 +1,12 @@
 'use strict';
 
 import { Notify, Report } from 'notiflix';
-import { isValidEmail, isValidPhone } from './validation';
+import { isValidPhone } from './validation';
 
 const form = document.getElementById('hero-form');
 const input = document.getElementById('form-input');
 
-form.addEventListener('submit', event => {
+form.addEventListener('submit', async event => {
   event.preventDefault();
   const { value } = event.target.phone;
   const { result } = isValidPhone(value);
@@ -16,8 +16,24 @@ form.addEventListener('submit', event => {
     setTimeout(() => {
       input.setCustomValidity('');
     }, 1000);
+    return;
   }
-  if (result) {
+  const data = {
+    phone: event.target.phone.value,
+  };
+  console.log(data);
+  let response = await fetch('http://localhost:3001/user', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+  let isFormSended = await response.json(response);
+
+  console.log(isFormSended);
+
+  if (isFormSended) {
     Report.success(
       'Заявку прийнято',
       "Ми зв'яжемося з Вами протягом 5 хвилин",
@@ -39,7 +55,7 @@ const applicationInputPhone = document.getElementById(
   'application__input-phone'
 );
 
-applicationForm.addEventListener('submit', event => {
+applicationForm.addEventListener('submit', async event => {
   event.preventDefault();
   const { phone, name } = event.target;
   const { result } = isValidPhone(phone.value);
@@ -51,6 +67,7 @@ applicationForm.addEventListener('submit', event => {
     }, 1000);
     return;
   }
+
   if (!result) {
     applicationInputPhone.setCustomValidity('error');
     Notify.failure('Неправильний формат номеру');
@@ -58,7 +75,21 @@ applicationForm.addEventListener('submit', event => {
       applicationInputPhone.setCustomValidity('');
     }, 1000);
   }
-  if (result) {
+  const data = {
+    phone: event.target.phone.value,
+    name: event.target.name.value,
+  };
+  const response = await fetch('http://localhost:3001/user', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+  const isFormSended = await response.json(response);
+  console.log(isFormSended);
+
+  if (isFormSended) {
     Report.success(
       'Заявку прийнято',
       "Ми зв'яжемося з Вами протягом 5 хвилин",
