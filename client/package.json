@@ -23,7 +23,8 @@
   "dependencies": {
     "gh-pages": "^5.0.0",
     "modern-normalize": "^1.1.0",
-    "notiflix": "^3.2.6"
+    "notiflix": "^3.2.6",
+    "validator": "^13.9.0"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead"
 }
