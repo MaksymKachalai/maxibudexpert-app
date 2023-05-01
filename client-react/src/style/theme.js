@@ -4,11 +4,13 @@ export const theme = {
       white: '#ffffff',
       black: '#000000',
       accent: '#a74d4a',
+      secondary: '#545454',
     },
     background: {
       white: '#ffffff',
       black: '#000000',
       accent: '#a74d4a',
+      secondary: '#545454',
     },
     accent: '#a74d4a',
     secondary: '#545454',

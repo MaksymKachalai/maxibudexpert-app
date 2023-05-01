@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -35,7 +36,7 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -169,6 +170,8 @@ textarea {
 
 button {
   background-color: transparent;
+  outline: none;
+  border: none;
 }
 /**
  * Show the overflow in IE.
@@ -346,9 +349,10 @@ template {
 }
 
 body{
+  position: relative;
   height: 100vh;
   width: 100%;
   font-family:"Montserrat", "Raleway", sans-serif;
   font-size: 16px;
-  overflow: hidden;
 }
+
