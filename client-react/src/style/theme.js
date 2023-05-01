@@ -10,7 +10,7 @@ export const theme = {
       white: '#ffffff',
       black: '#000000',
       accent: '#a74d4a',
-      secondary: '#545454',
+      secondary: '#e9eaee',
     },
     accent: '#a74d4a',
     secondary: '#545454',
