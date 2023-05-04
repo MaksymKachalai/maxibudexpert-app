@@ -4,6 +4,7 @@ export const Footer = styled.footer`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 
   padding-right: ${(prop) => prop.theme.space[3]}px;
   padding-left: ${(prop) => prop.theme.space[3]}px;

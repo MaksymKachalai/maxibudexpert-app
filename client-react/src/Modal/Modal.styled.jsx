@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const Modal = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   width: 100%;
   height: 100vh;
-  padding: ${(prop) => prop.theme.space[2]}px;
+  overflow: hidden;
+  padding: ${(prop) => prop.theme.space[3]}px;
   background-color: ${(prop) => prop.theme.colors.background.white};
 `;
 

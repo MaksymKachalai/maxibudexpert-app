@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const initialState = {
   name: '',
@@ -47,8 +48,25 @@ export const useForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      console.log(fields);
-      setErrors(initialStateErrors);
+      fetch('http://localhost:3001/user', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: fields.name,
+          phone: fields.phone,
+        }),
+      })
+        .then((res) =>
+          res.ok ? toast.success('Заявку відправлено') : toast.error('Щось пішло не так, спробуйте ще раз')
+        )
+        .catch(console.log);
+
+      setTimeout(() => {
+        setFields(initialState);
+        setErrors(initialStateErrors);
+      }, 250);
     }
   };
 

@@ -6,7 +6,7 @@ import houseImage from '../../images/private-house-background.jpg';
 
 export const ServicesSection = () => {
   return (
-    <SC.Services>
+    <SC.Services id="service">
       <SC.ServicesTitle>Наші послуги</SC.ServicesTitle>
       <SC.TitleLine></SC.TitleLine>
       <SC.ServicesList>

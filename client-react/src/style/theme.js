@@ -37,4 +37,10 @@ export const theme = {
     caps: '0.2em',
   },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  device: {
+    tablet: '(min-width: 768px)',
+    laptop: '(min-width: 1024px)',
+    laptopL: '(min-width:1440px)',
+    desktop: '(min-width:2560px)',
+  },
 };

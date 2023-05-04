@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import * as SC from './MobileMenu.styled';
 import { FiMenu } from 'react-icons/fi';
 import { Modal } from '../../Modal/Modal';
 

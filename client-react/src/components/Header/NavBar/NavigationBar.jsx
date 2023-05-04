@@ -5,10 +5,10 @@ export const NavigationBar = ({ direction }) => {
   return (
     <SC.NavbarContainer>
       <SC.NavbarList direction={direction}>
-        <li>Наші послуги</li>
-        <li>Про нас</li>
-        <li>Блог</li>
-        <li>Контакти</li>
+        <SC.NavbarLink>Наші послуги</SC.NavbarLink>
+        <SC.NavbarLink>Про нас</SC.NavbarLink>
+        <SC.NavbarLink>Блог</SC.NavbarLink>
+        <SC.NavbarLink>Контакти</SC.NavbarLink>
       </SC.NavbarList>
     </SC.NavbarContainer>
   );

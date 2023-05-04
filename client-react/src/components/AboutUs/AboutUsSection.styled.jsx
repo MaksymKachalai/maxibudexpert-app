@@ -25,10 +25,16 @@ export const AboutUsSubtitle = styled.p`
   font-size: ${(prop) => prop.theme.fontSizes[4]}px;
   font-weight: ${(prop) => prop.theme.fontWeights.heading};
   color: ${(prop) => prop.theme.colors.text.secondary};
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    font-size: ${(prop) => prop.theme.fontSizes[5]}px;
+  }
 `;
 export const AboutUsSubtitleAccent = styled(AboutUsSubtitle)`
   font-size: ${(prop) => prop.theme.fontSizes[5]}px;
   color: ${(prop) => prop.theme.colors.text.accent};
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    font-size: ${(prop) => prop.theme.fontSizes[6]}px;
+  }
 `;
 
 export const TitleLine = styled.span`
@@ -46,15 +52,21 @@ export const AboutUsDescription = styled.p`
 
   text-align: center;
   color: ${(prop) => prop.theme.colors.text.secondary};
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    font-size: ${(prop) => prop.theme.fontSizes[3]}px;
+  }
 `;
 
 export const AboutUsList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 30px;
-
   width: 100%;
+  @media screen and (${(prop) => prop.theme.device.laptop}) {
+    flex-direction: row;
+  }
 `;
 
 export const AboutUsItem = styled.li`

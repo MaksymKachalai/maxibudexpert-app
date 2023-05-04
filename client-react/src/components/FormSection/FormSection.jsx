@@ -2,16 +2,17 @@ import React from 'react';
 import * as SC from './FormSection.styled';
 import { useForm } from '../../hooks/UseForm/UseForm';
 import { FcBusinessman, FcPhoneAndroid, FcOk, FcHighPriority } from 'react-icons/fc';
+import { MainButton } from '../Common/MainButton/MainButton';
 
 export const FormSection = () => {
   const { handleInputChange, handleSubmit, fields, errors } = useForm();
 
   return (
     <SC.FormSection>
-      <h2>Залиште Заявку</h2>
+      <SC.Title>Залиште Заявку</SC.Title>
       <SC.Form onSubmit={handleSubmit}>
         <SC.FormGroup>
-          <SC.InputLabel htmlFor="input-name">Ім'я</SC.InputLabel>
+          <SC.InputLabel htmlFor="input-name">Імя</SC.InputLabel>
           <SC.InputContainer>
             <SC.FormDecorationIcon>
               <FcBusinessman size={35} />
@@ -69,7 +70,7 @@ export const FormSection = () => {
             )}
           </SC.InputContainer>
         </SC.FormGroup>
-        <button type="submit">Замовити дзвінок</button>
+        <MainButton type="submit">Замовити дзвінок</MainButton>
       </SC.Form>
     </SC.FormSection>
   );

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Button } from '../Common/MainButton/MainButton.styled';
 
 export const Services = styled.section`
   display: flex;
@@ -16,6 +17,10 @@ export const ServicesTitle = styled.h2`
   color: ${(prop) => prop.theme.colors.text.accent};
 
   text-align: center;
+
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    font-size: ${(prop) => prop.theme.fontSizes[5]}px;
+  }
 `;
 
 export const TitleLine = styled.span`
@@ -35,6 +40,10 @@ export const ServicesList = styled.ul`
   gap: 10px;
 
   width: 100%;
+
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    flex-direction: row;
+  }
 `;
 
 export const ServicesItem = styled.li`
@@ -48,6 +57,14 @@ export const ServicesItem = styled.li`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (${(prop) => prop.theme.device.laptop}) {
+    height: 350px;
+  }
+
+  @media screen and (${(prop) => prop.theme.device.laptopL}) {
+    height: 400px;
+  }
 `;
 
 export const ServicesCardTitle = styled.h4`
@@ -57,6 +74,7 @@ export const ServicesCardTitle = styled.h4`
   transform: translate(-50%, -50%);
 
   width: 90%;
+  max-width: 500px;
   padding-top: ${(prop) => prop.theme.space[2]}px;
   padding-bottom: ${(prop) => prop.theme.space[2]}px;
 
@@ -68,19 +86,21 @@ export const ServicesCardTitle = styled.h4`
   color: ${(prop) => prop.theme.colors.text.secondary};
 
   text-align: center;
+
+  @media screen and (${(prop) => prop.theme.device.laptop}) {
+    font-size: ${(prop) => prop.theme.fontSizes[4]}px;
+  }
 `;
 
-export const CardButton = styled.button`
+export const CardButton = styled(Button)`
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translateX(-50%);
 
   padding: ${(prop) => prop.theme.space[2]}px;
-  border-radius: 5px;
 
-  background-color: ${(prop) => prop.theme.colors.background.accent};
-  font-size: ${(prop) => prop.theme.fontSizes[1]}px;
-  white-space: nowrap;
-  color: white;
+  @media screen and (${(prop) => prop.theme.device.laptop}) {
+    font-size: ${(prop) => prop.theme.fontSizes[3]}px;
+  }
 `;

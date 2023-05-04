@@ -13,7 +13,7 @@ export const Modal = ({ isOpen, onClose }) => {
       <SC.ModalHeader>
         <MainLogo />
         <button type="button" onClick={onClose}>
-          <IoCloseOutline size={30} color="#545454" />
+          <IoCloseOutline size={40} color="#545454" />
         </button>
       </SC.ModalHeader>
       <SC.ModalNavigationContainer>

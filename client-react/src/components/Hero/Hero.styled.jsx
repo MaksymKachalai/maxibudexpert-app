@@ -28,6 +28,10 @@ export const HeroTitle = styled.h1`
   color: ${(prop) => prop.theme.colors.text.accent};
 
   text-align: center;
+
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    font-size: ${(prop) => prop.theme.fontSizes[6]}px;
+  }
 `;
 
 export const HeroSubtitle = styled.h2`
@@ -36,4 +40,7 @@ export const HeroSubtitle = styled.h2`
   color: ${(prop) => prop.theme.colors.text.secondary};
 
   text-align: center;
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    font-size: ${(prop) => prop.theme.fontSizes[3]}px;
+  }
 `;

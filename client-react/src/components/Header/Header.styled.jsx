@@ -8,8 +8,14 @@ export const Header = styled.header`
   z-index: 20;
   padding-right: ${(prop) => prop.theme.space[3]}px;
   padding-left: ${(prop) => prop.theme.space[3]}px;
-  padding-top: ${(prop) => prop.theme.space[4]}px;
-  padding-bottom: ${(prop) => prop.theme.space[4]}px;
+  padding-top: ${(prop) => prop.theme.space[3]}px;
+  padding-bottom: ${(prop) => prop.theme.space[3]}px;
+
+  background-color: ${(prop) => prop.theme.colors.background.secondary};
+
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    background-color: transparent;
+  }
 `;
 
 export const HeaderContainer = styled.div`

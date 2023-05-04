@@ -12,14 +12,23 @@ export const FormSection = styled.div`
   background-color: ${(prop) => prop.theme.colors.background.secondary};
 `;
 
+export const Title = styled.h2`
+  margin-bottom: ${(prop) => prop.theme.space[5]}px;
+
+  color: ${(prop) => prop.theme.colors.text.secondary};
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    font-size: ${(prop) => prop.theme.fontSizes[5]}px;
+  }
+`;
+
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  gap: 40px;
-
+  gap: 35px;
   width: 100%;
+  max-width: 550px;
 `;
 
 export const FormGroup = styled.div`
@@ -71,6 +80,10 @@ export const FormInput = styled.input`
   &:focus {
     outline: 2px solid ${(prop) => prop.theme.colors.accent};
   }
+
+  @media screen and (${(prop) => prop.theme.device.tablet}) {
+    font-size: ${(prop) => prop.theme.fontSizes[3]}px;
+  }
 `;
 
 const infoAnimation = keyframes`
@@ -97,3 +110,4 @@ export const ErrorMessage = styled.span`
 
   color: ${(prop) => prop.theme.colors.error};
 `;
+
