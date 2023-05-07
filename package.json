@@ -2,7 +2,7 @@
   "name": "client-react",
   "version": "0.1.0",
   "private": false,
-  "homepage": "http://MaksymKachalai.github.io/maxibudexpert-app",
+  "homepage": "http://MaksymKachalai.github.io/maxibudexpert-app/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
