@@ -8,7 +8,9 @@ export const Layout = () => {
   return (
     <SC.Wrapper>
       <Header />
-      <Outlet />
+      <SC.Main>
+        <Outlet />
+      </SC.Main>
       <Footer />
     </SC.Wrapper>
   );

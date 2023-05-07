@@ -4,9 +4,9 @@ import * as SC from './ContactPhone.styled';
 
 export const ContactPhone = () => {
   return (
-    <SC.ContactPhoneContainer>
+    <SC.ContactPhoneContainer href="tel:380970819231">
       <BiPhoneCall size={22} />
-      <SC.ContactPhoneLink href="tel:380970819231">Дзвінок</SC.ContactPhoneLink>
+      Дзвінок
     </SC.ContactPhoneContainer>
   );
 };

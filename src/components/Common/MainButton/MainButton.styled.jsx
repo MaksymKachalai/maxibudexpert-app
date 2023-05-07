@@ -5,9 +5,7 @@ export const Button = styled.button`
   border-radius: 5px;
   background-color: ${(prop) => prop.theme.colors.background.accent};
   color: ${(prop) => prop.theme.colors.text.white};
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
-  @media screen and (${(prop) => prop.theme.device.tablet}) {
-    font-size: ${(prop) => prop.theme.fontSizes[3]}px;
-  }
+  cursor: pointer;
 `;
