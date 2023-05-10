@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
-  height: 66px;
+export const SectionContainer = styled.section`
   width: 100%;
-  border-radius: 25px;
 
-  background-color: ${(prop) => prop.theme.colors.background.accent};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  font-size: 20px;
-  font-weight: 600;
-
-  color: $white-color;
+  padding-right: ${(prop) => prop.theme.space[3]}px;
+  padding-left: ${(prop) => prop.theme.space[3]}px;
+  padding-top: ${(prop) => prop.theme.space[4]}px;
+  padding-bottom: ${(prop) => prop.theme.space[4]}px;
 `;

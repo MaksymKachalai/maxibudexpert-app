@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.efcc9192.css",
+    "main.js": "/static/js/main.be7a8ca3.js",
+    "static/media/old-buildings-background.jpg": "/static/media/old-buildings-background.93238380680ddc9c6f8d.jpg",
+    "static/media/private-house-background.jpg": "/static/media/private-house-background.919ddf7ea6ead4be9397.jpg",
+    "static/media/commercial-background.jpg": "/static/media/commercial-background.369a811e0be0695cfa27.jpg",
+    "static/media/background.jpg": "/static/media/background.aa3828ae14b58cccf55d.jpg",
+    "index.html": "/index.html",
+    "main.efcc9192.css.map": "/static/css/main.efcc9192.css.map",
+    "main.be7a8ca3.js.map": "/static/js/main.be7a8ca3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efcc9192.css",
+    "static/js/main.be7a8ca3.js"
+  ]
+}

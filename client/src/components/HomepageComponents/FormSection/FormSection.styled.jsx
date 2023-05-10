@@ -1,14 +1,7 @@
 import styled, { keyframes } from 'styled-components';
+import { SectionContainer } from '../../../style/globalStyles';
 
-export const FormSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-right: ${(prop) => prop.theme.space[3]}px;
-  padding-left: ${(prop) => prop.theme.space[3]}px;
-  padding-top: ${(prop) => prop.theme.space[4]}px;
-  padding-bottom: ${(prop) => prop.theme.space[5]}px;
-
+export const FormSectionContainer = styled(SectionContainer)`
   background-color: ${(prop) => prop.theme.colors.background.secondary};
 `;
 
@@ -110,4 +103,3 @@ export const ErrorMessage = styled.span`
 
   color: ${(prop) => prop.theme.colors.error};
 `;
-

@@ -1,10 +1,11 @@
 import React from 'react';
 import * as SC from './ProccessSection.styled';
 import { FcSurvey, FcSportsMode, FcInspection, FcManager, FcEngineering } from 'react-icons/fc';
+import { SectionContainer } from '../../../style/globalStyles';
 
 export const ProccessSection = () => {
   return (
-    <SC.Proccess>
+    <SectionContainer>
       <SC.Title>Як ми працюємо</SC.Title>
       <SC.List>
         <SC.Item>
@@ -53,6 +54,6 @@ export const ProccessSection = () => {
           </SC.Card>
         </SC.Item>
       </SC.List>
-    </SC.Proccess>
+    </SectionContainer>
   );
 };

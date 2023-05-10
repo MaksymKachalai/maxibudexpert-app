@@ -9,13 +9,12 @@ const app = express();
 app.use(morgan('dev'));
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
-console.log(path.join(__dirname, '..', 'client', 'build'));
+app.use(express.static(path.join(__dirname, 'build')));
 
 const bot = new TelegramBot(process.env.token, { polling: true });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'client', 'build'));
+  res.sendFile(path.join(__dirname, 'build'));
 });
 
 app.post('/user', body('phone').isMobilePhone('uk-UA'), body('name').trim(), (req, res) => {
@@ -33,9 +32,9 @@ app.post('/user', body('phone').isMobilePhone('uk-UA'), body('name').trim(), (re
 });
 
 app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log('Server is running on port 3001');
 });

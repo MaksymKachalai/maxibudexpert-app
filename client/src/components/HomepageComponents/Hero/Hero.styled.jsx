@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import background from '../../images/background.jpg';
-import { Button } from '../Common/MainButton/MainButton.styled';
+import background from '../../../images/background.jpg';
+import { Button } from '../../Common/MainButton/MainButton.styled';
 import { HashLink } from 'react-router-hash-link';
 
 export const Hero = styled.section`
@@ -10,7 +10,7 @@ export const Hero = styled.section`
   justify-content: center;
   gap: 10px;
 
-  height: 100%;
+  height: 100vh;
   width: 100%;
 
   padding-right: ${(prop) => prop.theme.space[3]}px;

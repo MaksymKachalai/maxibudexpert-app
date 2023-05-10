@@ -6,12 +6,12 @@ import * as SC from './Layout.styled';
 
 export const Layout = () => {
   return (
-    <SC.Wrapper>
+    <>
       <Header />
       <SC.Main>
         <Outlet />
       </SC.Main>
       <Footer />
-    </SC.Wrapper>
+    </>
   );
 };
