@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import * as SC from './Carousel.styled';
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr';
-import partner1 from '../../images/partners/CeresitIcon.png';
-import partner2 from '../../images/partners/KnaufIcon.png';
-import partner3 from '../../images/partners/LegrandIcon.png';
-import partner4 from '../../images/partners/RehauIcon.png';
-import partner5 from '../../images/partners/ShnaiderIcon.png';
+import partner1 from '../../../images/partners/CeresitIcon.png';
+import partner2 from '../../../images/partners/KnaufIcon.png';
+import partner3 from '../../../images/partners/LegrandIcon.png';
+import partner4 from '../../../images/partners/RehauIcon.png';
+import partner5 from '../../../images/partners/ShnaiderIcon.png';
 
 const images = [partner1, partner2, partner3, partner4, partner5];
 

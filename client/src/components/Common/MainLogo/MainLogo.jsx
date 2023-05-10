@@ -3,7 +3,7 @@ import * as SC from './MainLogo.styled';
 
 export const MainLogo = () => {
   return (
-    <SC.LogoContainer>
+    <SC.LogoContainer to="/home">
       <svg viewBox="0 0 32 32" width={50} height={50}>
         <path
           fill="#a74d4a"

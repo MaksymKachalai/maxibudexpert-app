@@ -1,15 +1,15 @@
 import React from 'react';
 import * as SC from './FormSection.styled';
-import { useForm } from '../../hooks/UseForm/UseForm';
+import { useForm } from '../../../hooks/UseForm/UseForm';
 import { FcBusinessman, FcPhoneAndroid } from 'react-icons/fc';
-import { MainButton } from '../Common/MainButton/MainButton';
-import { MainInput } from '../Common/MainInput/MainInput';
+import { MainButton } from '../../Common/MainButton/MainButton';
+import { MainInput } from '../../Common/MainInput/MainInput';
 
 export const FormSection = () => {
   const { handleInputChange, handleSubmit, fields, errors } = useForm();
 
   return (
-    <SC.FormSection id="form-section">
+    <SC.FormSectionContainer id="form-section">
       <SC.Title>Залиште Заявку</SC.Title>
       <SC.Form onSubmit={handleSubmit}>
         <MainInput
@@ -41,6 +41,6 @@ export const FormSection = () => {
 
         <MainButton type="submit">Замовити дзвінок</MainButton>
       </SC.Form>
-    </SC.FormSection>
+    </SC.FormSectionContainer>
   );
 };

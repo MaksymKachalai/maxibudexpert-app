@@ -4,7 +4,7 @@ import * as SC from './AboutUsSection.styled';
 
 export const AboutUsSection = () => {
   return (
-    <SC.AboutUs>
+    <SC.AboutUsContainer>
       <SC.AboutUsTitle>About Us</SC.AboutUsTitle>
       <SC.AboutUsSubtitleAccent>10+</SC.AboutUsSubtitleAccent>
       <SC.AboutUsSubtitle>років успішної роботи</SC.AboutUsSubtitle>
@@ -36,6 +36,6 @@ export const AboutUsSection = () => {
           <SC.ItemTitle>Повторних звернень</SC.ItemTitle>
         </SC.AboutUsItem>
       </SC.AboutUsList>
-    </SC.AboutUs>
+    </SC.AboutUsContainer>
   );
 };

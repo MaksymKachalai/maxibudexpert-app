@@ -1,12 +1,13 @@
 import React from 'react';
 import * as SC from './ServicesSection.styled';
-import commercialImage from '../../images/commercial-background.jpg';
-import appartmentImage from '../../images/old-buildings-background.jpg';
-import houseImage from '../../images/private-house-background.jpg';
+import commercialImage from '../../../images/commercial-background.jpg';
+import appartmentImage from '../../../images/old-buildings-background.jpg';
+import houseImage from '../../../images/private-house-background.jpg';
+import { SectionContainer } from '../../../style/globalStyles';
 
 export const ServicesSection = () => {
   return (
-    <SC.Services id="service">
+    <SectionContainer id="service">
       <SC.ServicesTitle>Наші послуги</SC.ServicesTitle>
       <SC.TitleLine></SC.TitleLine>
       <SC.ServicesList>
@@ -23,6 +24,6 @@ export const ServicesSection = () => {
           <SC.CardButton type="button">Дізнатися більше</SC.CardButton>
         </SC.ServicesItem>
       </SC.ServicesList>
-    </SC.Services>
+    </SectionContainer>
   );
 };
