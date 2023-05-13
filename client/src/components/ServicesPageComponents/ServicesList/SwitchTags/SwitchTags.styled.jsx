@@ -7,6 +7,21 @@ export const SwitchButtonContainer = styled.div`
 `;
 
 export const SwitchButton = styled.button`
-  padding: 5px;
-  background-color: ${(prop) => (prop.isActive ? 'red' : 'green')};
+  padding: 10px;
+  border-radius: 5px;
+  background-color: ${(prop) => {
+    if (prop.isActive) {
+      return prop.theme.colors.background.accent;
+    }
+    return prop.theme.colors.background.secondary;
+  }};
+
+  color: ${(prop) => {
+    if (prop.isActive) {
+      return prop.theme.colors.text.white;
+    }
+    return prop.theme.colors.text.secondary;
+  }};
+
+  font-weight: 500;
 `;

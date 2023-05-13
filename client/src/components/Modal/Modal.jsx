@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as SC from './Modal.styled';
-import { MainLogo } from '../components/Common/MainLogo/MainLogo';
+import { MainLogo } from '../Common/MainLogo/MainLogo';
 import { IoCloseOutline } from 'react-icons/io5';
-import { NavigationBar } from '../components/Header/NavBar/NavigationBar';
+import { NavigationBar } from '../Header/NavBar/NavigationBar';
 
 export const Modal = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
+  if (!isOpen) {
+    document.body.style.overflowY = 'auto';
+    return null;
+  } else {
+    document.body.style.overflowY = 'hidden';
+  }
 
   return ReactDOM.createPortal(
-    <SC.Modal>
+    <SC.Modal onClick={onClose}>
       <SC.ModalHeader>
         <MainLogo />
         <button type="button" onClick={onClose}>

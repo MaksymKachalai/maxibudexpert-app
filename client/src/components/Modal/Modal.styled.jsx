@@ -7,7 +7,7 @@ export const Modal = styled.div`
   z-index: 1000;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
   padding-right: ${(prop) => prop.theme.space[3]}px;
   padding-left: ${(prop) => prop.theme.space[3]}px;
   padding-top: ${(prop) => prop.theme.space[2]}px;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
-import { Modal } from '../../Modal/Modal';
+import { Modal } from '../Modal/Modal';
 
 export const MobileMenu = () => {
   const [isModalOpen, setIsModalOpen] = useState();

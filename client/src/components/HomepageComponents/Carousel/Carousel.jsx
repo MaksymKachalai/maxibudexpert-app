@@ -43,11 +43,11 @@ export const Carousel = () => {
   };
 
   return (
-    <SC.Carousel onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
+    <SC.Carousel>
       <SC.CarouselButton type="button" onClick={previousImage} side="left">
         <GrFormPrevious size={50} />
       </SC.CarouselButton>
-      <SC.ImageContainer>
+      <SC.ImageContainer onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <SC.Image src={images[currentImageIndex]} alt="" />
       </SC.ImageContainer>
       <SC.CarouselButton type="button" onClick={nextImage} side="right">
