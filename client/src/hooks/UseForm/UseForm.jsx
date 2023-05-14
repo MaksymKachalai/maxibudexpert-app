@@ -48,7 +48,7 @@ export const useForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      fetch('https://maxibud-expert-heroku.herokuapp.com/user', {
+      fetch('http://localhost:3001/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
