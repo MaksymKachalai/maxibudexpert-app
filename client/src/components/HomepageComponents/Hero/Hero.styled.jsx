@@ -13,10 +13,7 @@ export const Hero = styled.section`
   height: 100vh;
   width: 100%;
 
-  padding-right: ${(prop) => prop.theme.space[3]}px;
-  padding-left: ${(prop) => prop.theme.space[3]}px;
-  padding-top: ${(prop) => prop.theme.space[4]}px;
-  padding-bottom: ${(prop) => prop.theme.space[4]}px;
+  padding: ${(prop) => prop.theme.space[4]}px ${(prop) => prop.theme.space[3]}px;
 
   background-image: url(${background});
   background-position: center;
@@ -39,21 +36,19 @@ export const HeroTitle = styled.h1`
 export const HeroSubtitle = styled.h2`
   margin-bottom: ${(prop) => prop.theme.space[3]}px;
 
+  text-align: center;
+
   font-size: ${(prop) => prop.theme.fontSizes[2]}px;
   font-weight: ${(prop) => prop.theme.fontWeights.body};
   color: ${(prop) => prop.theme.colors.text.secondary};
 
-  text-align: center;
   @media screen and (${(prop) => prop.theme.device.tablet}) {
     font-size: ${(prop) => prop.theme.fontSizes[3]}px;
   }
 `;
 
 export const HeroButtonMain = styled(Button)`
-  padding-right: ${(prop) => prop.theme.space[2]}px;
-  padding-left: ${(prop) => prop.theme.space[2]}px;
-  padding-top: ${(prop) => prop.theme.space[3]}px;
-  padding-bottom: ${(prop) => prop.theme.space[3]}px;
+  padding: ${(prop) => prop.theme.space[3]}px ${(prop) => prop.theme.space[2]}px;
 `;
 
 export const HashLinkStyled = styled(HashLink)`
