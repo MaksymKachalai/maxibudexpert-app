@@ -4,15 +4,21 @@ import background from '../../../images/old-buildings-background.jpg';
 
 export const ServicesListSection = styled(SectionContainer)`
   min-height: 100vh;
-  padding: 0px;
-  padding-top: ${(prop) => prop.theme.space[5]}px;
+  padding: ${(prop) => prop.theme.space[3]}px;
+  padding-top: 80px;
+`;
+
+export const Title = styled.h2`
+  margin-bottom: ${(prop) => prop.theme.space[4]}px;
 `;
 
 export const ServicesList = styled.ul`
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
 
   width: 100%;
 `;

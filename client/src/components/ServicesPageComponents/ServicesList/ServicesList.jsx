@@ -1,28 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as SC from './ServicesList.styled';
 import { FcBiotech, FcElectroDevices, FcFeedIn, FcCloth, FcPanorama, FcFullTrash } from 'react-icons/fc';
 
-import { SwitchTags } from './SwitchTags/SwitchTags';
 import { ServiceItemCard } from './ServiceItemCard/ServiceItemCard';
 
 export const ServicesList = () => {
-  const [activeItem, setActiveItem] = useState('flat');
-
-  const handleButtonClick = (e) => {
-    const { name } = e.target;
-    if (activeItem === name) {
-      return;
-    }
-    setActiveItem(name);
-  };
-
   return (
     <SC.ServicesListSection>
-      <h2>Наші послуги</h2>
-      <SwitchTags handleButtonClick={handleButtonClick} activeItem={activeItem} />
-      <SC.ImageTitle>
-        <h3>Ремонт квартир</h3>
-      </SC.ImageTitle>
+      <SC.Title>Наші послуги</SC.Title>
       <SC.ServicesList>
         <ServiceItemCard
           title="Проектування"
