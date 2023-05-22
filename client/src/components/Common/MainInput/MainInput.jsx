@@ -27,7 +27,6 @@ export const MainInput = ({
           id={id}
           error={error}
         />
-
         {error ? (
           <>
             <SC.FormInfoInput>

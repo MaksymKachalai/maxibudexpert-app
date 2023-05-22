@@ -103,3 +103,22 @@ export const ErrorMessage = styled.span`
 
   color: ${(prop) => prop.theme.colors.error};
 `;
+
+const spinerAnimation = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+`;
+
+export const Spinner = styled.div`
+  border: 4px solid white;
+  border-radius: 50%;
+  border-left-color: transparent;
+  width: 22px;
+  height: 22px;
+  animation: ${spinerAnimation} 1s linear infinite;
+`;

@@ -2,7 +2,11 @@ import { ServicesList } from '../components/ServicesPageComponents/ServicesList/
 
 export const ServicesPage = () => {
   return (
-    <main>
+    <main
+      style={{
+        background: '#e9eaee',
+      }}
+    >
       <ServicesList />
     </main>
   );

@@ -6,7 +6,7 @@ import { MainButton } from '../../Common/MainButton/MainButton';
 import { MainInput } from '../../Common/MainInput/MainInput';
 
 export const FormSection = () => {
-  const { handleInputChange, handleSubmit, fields, errors } = useForm();
+  const { handleInputChange, handleSubmit, fields, errors, isFetching } = useForm();
 
   return (
     <SC.FormSectionContainer id="form-section">
@@ -39,7 +39,7 @@ export const FormSection = () => {
           <FcPhoneAndroid size={35} />
         </MainInput>
 
-        <MainButton type="submit">Замовити дзвінок</MainButton>
+        <MainButton type="submit">{isFetching ? <SC.Spinner /> : 'Замовити дзвінок'}</MainButton>
       </SC.Form>
     </SC.FormSectionContainer>
   );

@@ -1,5 +1,13 @@
-import React from 'react';
+import { CompanyInfo } from '../components/CompanyInfoPageComponents/CompanyInfo';
 
 export const CompanyInfoPage = () => {
-  return <div>CompanyInfoPage</div>;
+  return (
+    <main
+      style={{
+        background: '#e9eaee',
+      }}
+    >
+      <CompanyInfo />
+    </main>
+  );
 };
