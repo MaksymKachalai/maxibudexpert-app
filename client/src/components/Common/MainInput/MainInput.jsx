@@ -1,4 +1,3 @@
-import React from 'react';
 import * as SC from './MainInput.styled';
 import { FcOk, FcHighPriority } from 'react-icons/fc';
 
@@ -28,7 +27,6 @@ export const MainInput = ({
           id={id}
           error={error}
         />
-
         {error ? (
           <>
             <SC.FormInfoInput>

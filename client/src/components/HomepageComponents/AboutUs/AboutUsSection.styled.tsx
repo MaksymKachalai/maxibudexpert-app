@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { SectionContainer } from '../../../style/globalStyles';
+import { SectionContainer } from 'style/globalStyles';
 
 export const AboutUsContainer = styled(SectionContainer)`
   background-color: ${(prop) => prop.theme.colors.background.secondary};
@@ -42,8 +42,11 @@ export const TitleLine = styled.span`
 export const AboutUsDescription = styled.p`
   margin-bottom: 70px;
 
+  max-width: 1200px;
+
   text-align: center;
   color: ${(prop) => prop.theme.colors.text.secondary};
+
   @media screen and (${(prop) => prop.theme.device.tablet}) {
     font-size: ${(prop) => prop.theme.fontSizes[3]}px;
   }

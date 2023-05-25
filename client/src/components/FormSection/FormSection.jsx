@@ -1,12 +1,12 @@
 import React from 'react';
 import * as SC from './FormSection.styled';
-import { useForm } from '../../../hooks/UseForm/UseForm';
+import { useForm } from '../../hooks/UseForm/UseForm';
 import { FcBusinessman, FcPhoneAndroid } from 'react-icons/fc';
-import { MainButton } from '../../Common/MainButton/MainButton';
-import { MainInput } from '../../Common/MainInput/MainInput';
+import { MainButton } from '../Common/MainButton/MainButton';
+import { MainInput } from '../Common/MainInput/MainInput';
 
 export const FormSection = () => {
-  const { handleInputChange, handleSubmit, fields, errors } = useForm();
+  const { handleInputChange, handleSubmit, fields, errors, isFetching } = useForm();
 
   return (
     <SC.FormSectionContainer id="form-section">
@@ -39,7 +39,7 @@ export const FormSection = () => {
           <FcPhoneAndroid size={35} />
         </MainInput>
 
-        <MainButton type="submit">Замовити дзвінок</MainButton>
+        <MainButton type="submit">{isFetching ? <SC.Spinner /> : 'Замовити дзвінок'}</MainButton>
       </SC.Form>
     </SC.FormSectionContainer>
   );

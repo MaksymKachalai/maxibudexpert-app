@@ -14,6 +14,7 @@ const initialStateErrors = {
 export const useForm = () => {
   const [fields, setFields] = useState(initialState);
   const [errors, setErrors] = useState(initialStateErrors);
+  const [isFetching, setIsFetching] = useState(false);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -33,42 +34,47 @@ export const useForm = () => {
       nameError = "Введіть Ваше ім'я";
     }
 
-    if (!fields.phone || regex.test(fields.phone) === false) {
+    if (!fields.phone || !regex.test(fields.phone)) {
       phoneError = 'Невірний формат номеру';
     }
 
     if (nameError || phoneError) {
       setErrors({ nameError, phoneError });
-      console.log(nameError, phoneError);
       return false;
     }
     return true;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      fetch('http://localhost:3001/user', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: fields.name,
-          phone: fields.phone,
-        }),
-      })
-        .then((res) =>
-          res.ok ? toast.success('Заявку відправлено') : toast.error('Щось пішло не так, спробуйте ще раз')
-        )
-        .catch(console.log);
-
-      setTimeout(() => {
-        setFields(initialState);
-        setErrors(initialStateErrors);
-      }, 250);
+      try {
+        setIsFetching(true);
+        const response = await fetch('http://localhost:3001/user', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: fields.name,
+            phone: fields.phone,
+          }),
+        });
+        if (response.ok) {
+          toast.success('Заявку відправлено');
+          setTimeout(() => {
+            setFields(initialState);
+            setErrors(initialStateErrors);
+          }, 250);
+        }
+        setIsFetching(false);
+        toast.error('Щось пішло не так, спробуйте ще раз');
+      } catch (error) {
+        setIsFetching(false);
+        toast.error('Щось пішло не так, спробуйте ще раз');
+      }
     }
   };
 
-  return { handleSubmit, fields, handleInputChange, errors };
+  return { handleSubmit, fields, handleInputChange, errors, isFetching };
 };
