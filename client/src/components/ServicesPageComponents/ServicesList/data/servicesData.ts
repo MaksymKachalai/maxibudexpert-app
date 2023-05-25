@@ -1,9 +1,9 @@
-import architecture from "../../../../images/services/architecture.jpg"
-import paint from "../../../../images/services/paint.jpg"
-import destructure from "../../../../images/services/destructure.jpg"
-import electricity from "../../../../images/services/electricity.jpg"
-import isolation from "../../../../images/services/isolation.jpg"
-import cleaning from "../../../../images/services/cleaning.jpg"
+import architecture from "images/servicespage/planningImage.jpg"
+import paint from "images/servicespage/paintImage.jpg"
+import destructure from "images/servicespage/reconstructionImage.jpg"
+import electricity from "images/servicespage/electricityImage.jpg"
+import isolation from "images/servicespage/isolationImage.jpg"
+import cleaning from "images/servicespage/cleaningImage.jpg"
 
 
 

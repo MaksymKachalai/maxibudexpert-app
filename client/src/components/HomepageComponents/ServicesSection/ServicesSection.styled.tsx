@@ -103,6 +103,8 @@ export const CardButton = styled(NavLink)`
 
   text-align: center;
 
+  white-space: nowrap;
+
   background-color: ${(prop) => prop.theme.colors.background.accent};
 
   color: ${(prop) => prop.theme.colors.text.white};

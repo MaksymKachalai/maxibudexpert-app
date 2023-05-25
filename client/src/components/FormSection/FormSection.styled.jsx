@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { SectionContainer } from '../../../style/globalStyles';
+import { SectionContainer } from '../../style/globalStyles';
 
 export const FormSectionContainer = styled(SectionContainer)`
   background-color: ${(prop) => prop.theme.colors.background.secondary};

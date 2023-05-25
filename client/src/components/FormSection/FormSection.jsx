@@ -1,9 +1,9 @@
 import React from 'react';
 import * as SC from './FormSection.styled';
-import { useForm } from '../../../hooks/UseForm/UseForm';
+import { useForm } from '../../hooks/UseForm/UseForm';
 import { FcBusinessman, FcPhoneAndroid } from 'react-icons/fc';
-import { MainButton } from '../../Common/MainButton/MainButton';
-import { MainInput } from '../../Common/MainInput/MainInput';
+import { MainButton } from '../Common/MainButton/MainButton';
+import { MainInput } from '../Common/MainInput/MainInput';
 
 export const FormSection = () => {
   const { handleInputChange, handleSubmit, fields, errors, isFetching } = useForm();

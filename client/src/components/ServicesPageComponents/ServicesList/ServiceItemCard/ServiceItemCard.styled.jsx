@@ -8,6 +8,8 @@ export const Card = styled.li`
 
   width: 100%;
 
+  padding: 10px;
+
   border-radius: 5px;
 
   background-color: ${(prop) => prop.theme.colors.background.white};

@@ -1,7 +1,7 @@
 import * as SC from './ServicesSection.styled';
-import commercialImage from '../../../images/commercial-background.jpg';
-import appartmentImage from '../../../images/old-buildings-background.jpg';
-import houseImage from '../../../images/private-house-background.jpg';
+import commercialImage from 'images/homepage/services/commercialImage.jpg';
+import appartmentImage from 'images/homepage/services/flatsImage.jpg';
+import houseImage from 'images/homepage/services/houseImage.jpg';
 import { SectionContainer } from '../../../style/globalStyles';
 
 export const ServicesSection = () => {
