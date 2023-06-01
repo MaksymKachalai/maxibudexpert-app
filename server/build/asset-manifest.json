@@ -1,17 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.efcc9192.css",
-    "main.js": "/static/js/main.82f8331e.js",
-    "static/media/old-buildings-background.jpg": "/static/media/old-buildings-background.93238380680ddc9c6f8d.jpg",
-    "static/media/private-house-background.jpg": "/static/media/private-house-background.919ddf7ea6ead4be9397.jpg",
-    "static/media/commercial-background.jpg": "/static/media/commercial-background.369a811e0be0695cfa27.jpg",
-    "static/media/background.jpg": "/static/media/background.aa3828ae14b58cccf55d.jpg",
+    "main.css": "/static/css/main.735d8200.css",
+    "main.js": "/static/js/main.c93331c8.js",
+    "static/media/heroBackground_desktop.jpg": "/static/media/heroBackground_desktop.aa3828ae14b58cccf55d.jpg",
+    "static/media/heroBackground_tablet.jpg": "/static/media/heroBackground_tablet.659921696fb3dbace9de.jpg",
+    "static/media/flatsImage.jpg": "/static/media/flatsImage.5de411180be4a7ad3f59.jpg",
+    "static/media/electricityImage.jpg": "/static/media/electricityImage.1e7721b4dd3cf73fd739.jpg",
+    "static/media/introBackground.jpg": "/static/media/introBackground.85f82339c013c43fa078.jpg",
+    "static/media/innovationImage.jpg": "/static/media/innovationImage.aaf511e400c1883104fe.jpg",
+    "static/media/reconstructionImage.jpg": "/static/media/reconstructionImage.e172679f4472632493ec.jpg",
+    "static/media/cleaningImage.jpg": "/static/media/cleaningImage.50f5d00fa88812aada07.jpg",
+    "static/media/houseImage.jpg": "/static/media/houseImage.1708f90af9a9a3cfcb62.jpg",
+    "static/media/commercialImage.jpg": "/static/media/commercialImage.52f4a42975096503016a.jpg",
+    "static/media/peopleImage.jpg": "/static/media/peopleImage.ec0ad33f2199f08db76a.jpg",
+    "static/media/qualityImage.jpg": "/static/media/qualityImage.50a22f8869f0fd881a1e.jpg",
+    "static/media/heroBackground_mobile.jpg": "/static/media/heroBackground_mobile.b921a9c50d4702ba75d1.jpg",
+    "static/media/paintImage.jpg": "/static/media/paintImage.11fa46b6de0068409d1d.jpg",
+    "static/media/isolationImage.jpg": "/static/media/isolationImage.1b22717aa4bb45342033.jpg",
+    "static/media/planningImage.jpg": "/static/media/planningImage.0ae336f9c6f6c26e39ae.jpg",
     "index.html": "/index.html",
-    "main.efcc9192.css.map": "/static/css/main.efcc9192.css.map",
-    "main.82f8331e.js.map": "/static/js/main.82f8331e.js.map"
+    "main.735d8200.css.map": "/static/css/main.735d8200.css.map",
+    "main.c93331c8.js.map": "/static/js/main.c93331c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.efcc9192.css",
-    "static/js/main.82f8331e.js"
+    "static/css/main.735d8200.css",
+    "static/js/main.c93331c8.js"
   ]
 }

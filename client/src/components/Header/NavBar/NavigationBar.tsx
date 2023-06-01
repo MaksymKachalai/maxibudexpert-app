@@ -11,7 +11,6 @@ export const NavigationBar = ({ flexDirection }: IDirection) => {
       <SC.NavbarList flexDirection={flexDirection}>
         <SC.NavbarLink to="/services">Наші послуги</SC.NavbarLink>
         <SC.NavbarLink to="/info">Про нас</SC.NavbarLink>
-        <SC.NavbarLink to="/blog">Блог</SC.NavbarLink>
       </SC.NavbarList>
     </nav>
   );
