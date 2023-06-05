@@ -9,6 +9,7 @@ export const Title = styled.h2`
   margin-bottom: ${(prop) => prop.theme.space[5]}px;
 
   color: ${(prop) => prop.theme.colors.text.secondary};
+
   @media screen and (${(prop) => prop.theme.device.tablet}) {
     font-size: ${(prop) => prop.theme.fontSizes[5]}px;
   }
@@ -57,22 +58,10 @@ export const FormInput = styled.input`
   padding: 5px 40px;
 
   border-radius: 5px;
-  border: none;
-  outline: none;
 
   text-align: center;
 
   color: ${(prop) => prop.theme.colors.text.secondary};
-
-  outline: ${(prop) => {
-    if (prop.error) {
-      return `2px solid ${prop.theme.colors.error}`;
-    }
-  }};
-
-  &:focus {
-    outline: 2px solid ${(prop) => prop.theme.colors.accent};
-  }
 
   @media screen and (${(prop) => prop.theme.device.tablet}) {
     font-size: ${(prop) => prop.theme.fontSizes[3]}px;
