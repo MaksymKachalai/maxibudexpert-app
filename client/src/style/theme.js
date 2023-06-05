@@ -14,6 +14,7 @@ export const theme = {
     },
     accent: '#a74d4a',
     secondary: '#545454',
+    success: '#228B22',
     error: '#FF1744', // Set error color to red
     warning: '#FFFF00', // Set warning color to yellow
     info: '#2196F3', // Set info color to blue

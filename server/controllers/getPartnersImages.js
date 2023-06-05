@@ -1,1 +1,0 @@
-const getPartnersImages = (req, res) => {};

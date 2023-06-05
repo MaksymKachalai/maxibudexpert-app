@@ -34,20 +34,13 @@ export const FormInput = styled.input`
 
   border-radius: 5px;
   border: none;
-  outline: none;
 
   text-align: center;
 
   color: ${(prop) => prop.theme.colors.text.secondary};
 
-  outline: ${(prop) => {
-    if (prop.error) {
-      return `2px solid ${prop.theme.colors.error}`;
-    }
-  }};
-
   &:focus {
-    outline: 2px solid ${(prop) => prop.theme.colors.accent};
+    outline: 2px solid ${({ error, theme }) => (error ? theme.colors.error : theme.colors.success)};
   }
 
   @media screen and (${(prop) => prop.theme.device.tablet}) {
