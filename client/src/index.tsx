@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
-import 'animate.css/animate.css';
 import './index.css';
 import { App } from './components/App/App';
 import { theme } from './style/theme';

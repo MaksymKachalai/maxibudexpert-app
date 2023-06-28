@@ -28,6 +28,4 @@ const validateUserInfo = (req, res, next) => {
   next();
 };
 
-module.exports = {
-  validateUserInfo,
-};
+
