@@ -1,6 +1,6 @@
 export const postFormServer = async (data) => {
   try {
-    const response = await fetch('http://maxibudexpert.com.ua/user', {
+    const response = await fetch('http://localhost:80/maxibudserver/api/formHandler.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
