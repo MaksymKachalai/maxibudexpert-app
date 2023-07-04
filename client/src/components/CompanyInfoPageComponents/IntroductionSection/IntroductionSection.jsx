@@ -9,9 +9,6 @@ export const IntroductionSection = () => {
       <SC.DescriptionIntroduction>
         компанія, що займається ремонтом квартир, будинків та комерційних приміщень
       </SC.DescriptionIntroduction>
-      {/* <SC.HashLinkStyled smooth to="#form-section">
-        Замовити дзвінок
-      </SC.HashLinkStyled> */}
     </SC.IntroductionSection>
   );
 };

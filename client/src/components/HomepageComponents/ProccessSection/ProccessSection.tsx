@@ -32,7 +32,7 @@ export const ProccessSection = () => {
             <SC.CardIcon>
               <FcSportsMode size={60} />
             </SC.CardIcon>
-            <SC.CartText> Виїзд фахівця на обєкт</SC.CartText>
+            <SC.CartText> Виїзд фахівця на об'єкт</SC.CartText>
           </SC.Card>
         </SC.Item>
         <SC.Item>

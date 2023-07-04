@@ -1,21 +1,16 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
-  header('Access-Control-Allow-Origin: *');
+  // header('Access-Control-Allow-Origin: *');
   header('Access-Control-Allow-Methods: POST, OPTIONS');
   header('Access-Control-Allow-Headers: Content-Type');
   header('Access-Control-Max-Age: 1728000');
   die();
 }
 
-header('Access-Control-Allow-Origin: *');
+// header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
-if ($_SERVER["CONTENT_TYPE"] ==  'application/json') {
-  echo "True";
-} else {
-  echo "false";
-}
 
 $postData = file_get_contents('php://input');
 $data = json_decode($postData, true);
