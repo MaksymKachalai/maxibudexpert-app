@@ -8,7 +8,7 @@ export const ExtendedPrioritiesSection = () => {
     <SC.ExtendedPrioritiesSection>
       <SC.ListTextBoxes>
         <SC.TextBox>
-          <SC.TitleTextBox>Нашe бачення</SC.TitleTextBox>
+          <SC.TitleTextBox>Наше бачення</SC.TitleTextBox>
           <SC.InfoTextBox>
             Ми віримо, що процес ремонту і модернізації нерухомості може бути легким, швидким і, як результат,
             ефективним.
